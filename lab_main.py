@@ -98,7 +98,7 @@ class Wardrobe:
             print(f'Number of clothing: {number}. You can\'t go out')
         return number, out
 
-    def sort(self):
+    def sort_by_size(self):
         """
         Func for sorting by size
         :return sorted_list
@@ -119,11 +119,11 @@ class Wardrobe:
 
 
 if __name__ == '__main__':
-    cloth1 = Clothing("Grandfathers skirt", 'Holed Soviet Union', 'Ukraine', 'Gray', 46, Type.SHIRT)
-    cloth2 = Clothing('Dress', 'Are you a child?', 'Milan', 'Purple', 35, Type.DRESS)
-    cloth3 = Clothing('Jacket', 'Not fashion, not stylish', 'Trash can', 'Jeans', 44, Type.JACKET)
-    cloth4 = Clothing('Pants', 'My belly is big(((', 'The back of a chair', 'Black', 48, Type.JEANS)
-    cloth5 = Clothing('Jeans jacket', 'One more?!?!', 'Trash can again', 'Jeans', 40, Type.JACKET)
+    shtirt = Clothing("Grandfathers skirt", 'Holed Soviet Union', 'Ukraine', 'Gray', 46, Type.SHIRT)
+    dress = Clothing('Dress', 'Are you a child?', 'Milan', 'Purple', 35, Type.DRESS)
+    jacket = Clothing('Jacket', 'Not fashion, not stylish', 'Trash can', 'Jeans', 44, Type.JACKET)
+    jeans = Clothing('Pants', 'My belly is big(((', 'The back of a chair', 'Black', 48, Type.JEANS)
+    jeans_jacket = Clothing('Jeans jacket', 'One more?!?!', 'Trash can again', 'Jeans', 40, Type.JACKET)
     wardrobe = Wardrobe()
 
     wardrobe.add_clothing(cloth1)
@@ -135,4 +135,4 @@ if __name__ == '__main__':
     wardrobe.go_out()
     print(f'Sorted clothing: {wardrobe.sort()}')
 
-    del cloth1, cloth2, cloth3, cloth4, cloth5, wardrobe
+    del shirt, dress, jacket, jeans, jeans_jacket, wardrobe
