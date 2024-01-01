@@ -108,7 +108,7 @@ class Wardrobe:
                                                       key=lambda c: c.size, reverse=True)]
         return sorted_list
 
-    def ward_info(self):
+    def print_ward_info(self):
         """
         Getter for wardrobe info
         :return None
